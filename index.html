@@ -53,6 +53,31 @@
     </button>
 
     <style>
+      /* Fix cursive script font ascenders & descenders clipping across all sections */
+      h1.font-script,
+      h2.font-script,
+      h3.font-script,
+      .font-script {
+        font-family: 'Great Vibes', cursive !important;
+        line-height: 1.45 !important;
+        padding-top: 0.22em !important;
+        padding-bottom: 0.32em !important;
+        padding-left: 0.12em !important;
+        padding-right: 0.12em !important;
+        margin-top: -0.1em !important;
+        margin-bottom: -0.1em !important;
+        display: inline-block !important;
+        overflow: visible !important;
+        box-sizing: content-box !important;
+      }
+      .text-gold {
+        background: linear-gradient(115deg, #f6e2ae, #d9a441 40%, #f9ecc8 58%, #b9832e 85%, #f2d894) !important;
+        background-origin: padding-box !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        color: transparent !important;
+      }
+
       .audio-toggle-btn {
         position: fixed;
         bottom: 24px;
