@@ -20,3 +20,11 @@
   background-clip: text !important;
   color: transparent !important;
 }
+
+@media (max-width: 640px) {
+  .relative.pl-20 .flex.items-baseline.justify-between {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+}

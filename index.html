@@ -78,6 +78,15 @@
         color: transparent !important;
       }
 
+      /* On mobile, allow event ceremony titles full width to prevent single-word line breaks */
+      @media (max-width: 640px) {
+        .relative.pl-20 .flex.items-baseline.justify-between {
+          flex-direction: column !important;
+          align-items: flex-start !important;
+          gap: 4px !important;
+        }
+      }
+
       .audio-toggle-btn {
         position: fixed;
         bottom: 24px;
